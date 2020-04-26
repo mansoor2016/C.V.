@@ -1,0 +1,156 @@
+\documentclass{scrartcl}
+\reversemarginpar 
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} 
+\usepackage[nochapters]{classicthesis}
+\usepackage[LabelsAligned]{currvita}
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} 
+\usepackage{hyperref} 
+\usepackage{textcomp}
+
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} 
+\newlength{\datebox}\settowidth{\datebox}{Spring 2017} 
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 
+\vspace{0.5em}}
+\newcommand{\Description}[1]{\hangindent=0em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}}  
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\vspace*{2em}
+
+\begin{cv}{\spacedallcaps{Mansoor Aman}}
+
+\vspace*{2em}
+
+\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} 
+
+
+\NewEntry{email}{\href{mailto:mansoor.aman11@gmail.com}{mansoor.aman11@gmail.com}} 
+
+
+\NewEntry{phone}{(M) +(44) 756 354 4221}
+ 
+\vspace*{2em}
+
+\noindent\spacedlowsmallcaps{Summary}\\
+
+\Description{I am a mature, reliable, organised individual of pleasant disposition. I am capable of grasping new subjects with ease and can confidently apply and manipulate information in a variety of complex situations. I am a proficient C++ developer with experience in algorithmic software. I have worked for several years in the wind energy and motorsport sectors, specifically in R\&D and engineering development.}
+
+\vspace*{2em}
+
+\noindent\spacedlowsmallcaps{Work Experience}
+
+\vspace*{1em}
+
+\NewEntry{2019 - current}{\small Mercedes-AMG Petronas Formula One}\\
+
+\Description{\MarginText{Software Engineer}Working as part of the modelling and simulation group, I develop engineering software to compute vehicle performance. Tech-stack:\\
+
+\medskip
+
+\smallskip \smallskip
+$\cdotp$ Languages: Matlab, Python \\
+\smallskip
+$\cdotp$ Software testing: Azure Pipelines\\
+}
+
+\vspace{0.5em}
+
+\NewEntry{2017 - 2019}{\small DNV GL}\\
+
+\Description{\MarginText{Engineering Software\\Developer}Formerly Garrad Hassan \& Partners Ltd, DNV GL provides engineering consulting services to OEMs in the renewable sector, specifically for solar and wind energy. My role was to develop and maintain \emph{Bladed}, an industry standard tool for the structural, aerodynamic and control modelling of wind turbines.\\
+
+\medskip
+
+\smallskip \smallskip
+$\cdotp$ Languages: C++11/17, Fortran, Python \\
+\smallskip
+$\cdotp$ Software testing: TeamCity, NUnit, Google Test\\
+}
+
+\vspace{0.5em}
+
+\NewEntry{2016 -- 2 mos}{\small Rapiscan Systems}\\
+
+\Description{\MarginText{Software Development Intern}Rapiscan Systems manufactures security equipment and systems designed for checkpoints, cargo and baggage security inspections. I was an intern working within the engineering department, responsible for developing physics simulation software. My area of focus was charged particle scattering and trajectories.\\
+
+\medskip
+
+My primary duties were:\\
+
+\medskip
+
+\smallskip \smallskip
+$\cdotp$ Numerical programming in C and Matlab \\
+\smallskip
+$\cdotp$ Computational fluid dynamics simulations \\
+}
+
+\newpage
+
+\spacedlowsmallcaps{Education}\\
+
+\vspace*{1em}
+
+\NewEntry{2013--2017}{\small Imperial College London}\\
+
+\Description{\MarginText{Masters of Engineering} Aeronautical Engineering - 1st Class Honours \\ \smallskip $\cdotp$  \textit{Grade Averages}: First Year - 84, Second Year - 80, Third Year - 78, Fourth Year - 85 \\ \smallskip $\cdotp$ \textit{Master Thesis}: Robust stabilisation of under-resolved turbulence computations via spectral/$hp$ element methods\\ \smallskip $\cdotp$ \textit{Academic Projects}: Formula Student -- Design of an Electric Racing Vehicle, \,  Aerospace Vehicle Design -- Preliminary Design of a Commercial Aircraft, \,  Design and Manufacture of a Micro-Glider, \,  Design and Manufacture of Wind Turbines \\ \smallskip $\cdotp$ \textit{Dean\textquotesingle s List for the Faculty of Engineering} \\ \smallskip $\cdotp$ \textit{First Year Silver Award for Excellence} \\}
+
+\vspace*{1em}
+
+%\NewEntry{2011--2013}{\small Heston Community School}\\
+
+%\Description{\MarginText{A - Level}Mathematics (A*), \, Further Mathematics (A*), \, Physics (A*)}
+
+%\vspace*{0.5em} 
+
+%2\Description{\MarginText{GCSE}English Language (A), \, English Literature (A*), \,  Mathematics (A*), \, Science (A*), \, Additional Science (A*), \, German (A*), \, French (A), \, History (A*), \, ICT (A*A)}
+
+\vspace*{2em}
+
+\spacedlowsmallcaps{Academic Papers}\\
+
+\vspace*{1em}
+
+\Description{\MarginText{WESC}Validation and accommodation of vortex wake codes for wind turbine design loads calculations}
+
+\Description{\MarginText{Journal of Computational Physics}Spatially eigenanalysis of spectral/hp continuous Galerkin schemes and their stabilisation via DG mimicking spectral vanishing viscosity for high Reynolds numbers flows}
+
+\vspace*{2em}
+
+\spacedlowsmallcaps{Computer Skills}\\
+
+\vspace*{1em}
+
+\Description{\MarginText{Basic}Rust, SQL, Git, Linux}
+
+\Description{\MarginText{Proficient}Fortran, Python, SolidWorks}
+
+\Description{\MarginText{Advanced}C++, Matlab, STAR-CCM+}
+
+\vspace*{2em}
+
+\spacedlowsmallcaps{Languages}
+
+\vspace*{1em}
+
+\newlength{\langbox} 
+\settowidth{\langbox}{English} 
+\Description{\MarginText{Mother tongue}\parbox{\langbox}{\textsc{Persian}}}
+
+\vspace*{2em} 
+
+\Description{\MarginText{Interests} Hiking\ \ $\cdotp$\ \ Chess \ $\cdotp$\ \ Computer Hardware }
+
+\vspace*{2em} 
+
+%\Description{\MarginText{Reference}Dr Oliver \textsc{Buxton} \ \ $\cdotp$\ \ \hspace{0.2em} Lecturer of experimental aerodynamics\\ \hspace{3.15cm} Imperial College London}
+
+%\Description{\MarginText{}Dr David Hart\ \hspace{1.4em} \ $\cdotp$\ \ \hspace{0.2em} Electrostatics Engineer\\ \hspace{3.15cm} Rapiscan Systems}
+
+\thispagestyle{empty}
+
+\end{cv}
+
+\end{document}
